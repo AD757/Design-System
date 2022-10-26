@@ -5,7 +5,7 @@ import { typeScale, primaryFont } from "../utils";
 const Input = styled.input`
   width: 316px;
   height: 52px;
-  background-color: ${props => props.theme.textFieldBackground};
+  background-color: ${(props) => props.theme.textFieldBackground};
   border: none;
   padding-left: 8px;
   font-family: ${primaryFont};
@@ -13,7 +13,7 @@ const Input = styled.input`
 `;
 
 const Label = styled.label`
-  color: ${props => props.theme.textFieldLabelColor};
+  color: ${(props) => props.theme.textFieldLabelColor};
   font-size: ${typeScale.helperText};
   margin-bottom: 8px;
 `;

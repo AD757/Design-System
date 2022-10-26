@@ -40,6 +40,10 @@ const App = () => {
         }}
       >
         <SignUpModal showModal={showModal} setShowModal={setShowModal} />
+        {/* <PrimaryButton modifiers={["warning"]}>Warning</PrimaryButton>
+        <PrimaryButton modifiers={["error"]}>Error</PrimaryButton>
+        <PrimaryButton modifiers={["success"]}>Success</PrimaryButton>
+        <EmailInput label="Email" placeholder="ad.design@gmail.com" /> */}
         <GlobalStyle />
       </div>
     </ThemeProvider>

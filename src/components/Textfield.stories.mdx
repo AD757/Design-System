@@ -1,0 +1,34 @@
+import { Meta, Story, Preview } from "@storybook/addon-docs/blocks";
+import { withKnobs, boolean } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+import { EmailInput, PasswordInput } from "./TextFields";
+
+<Meta title="Design System|Textfields" component={EmailInput} />
+
+# Textfields
+
+Text field is a basic text control that enables the user to type a small amount of text.
+
+## Usage
+
+When the user indicates that text entry is complete, the text field fires an action event.
+
+## Email Input
+
+Email input are used for automatically validated to ensure it is a properly formatted e-mail address.
+
+<Preview withToolbar>
+  <Story name="Email input">
+    <EmailInput label="Email" placeholder="ad.design@gmail.com" />
+  </Story>
+</Preview>
+
+## Password Input
+
+Password input are used to provide a way for the user to securely enter a password.
+
+<Preview withToolbar>
+  <Story name="Password input">
+    <PasswordInput label="Password" />
+  </Story>
+</Preview>

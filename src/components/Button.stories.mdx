@@ -22,25 +22,83 @@ Buttons are used to trigger internal actions within your web applications.
 Primary buttons are used as a call to action and indicate the most important action on a page.
 
 <Preview withToolbar>
-  <Story name="primary">
-    <PrimaryButton onClick={action('button-click')} disabled={boolean("Disabled", false)}>Hello world</PrimaryButton>
+  <Story name="Primary">
+    <PrimaryButton onClick={action('button-click')} disabled={boolean("Disabled", false)}>Primary</PrimaryButton>
   </Story>
 </Preview>
 
 ## Secondary Buttons
 
-Primary buttons are used as a call to action and indicate the most important action on a page.
+Secondary buttons are used for offering non-primary actions to users.
 
-<Story name="secondary">
-  <SecondaryButton disabled={boolean("Disabled", false)}>Hello world</SecondaryButton>
+<Preview withToolbar>
+<Story name="Secondary">
+  <SecondaryButton disabled={boolean("Disabled", false)}>Secondary</SecondaryButton>
 </Story>
+</Preview>
 
 ## Tertiary Buttons
 
-Primary buttons are used as a call to action and indicate the most important action on a page.
+Tertiary buttons are used for actions such as 'cancel' or 'close' actions
 
-<Story name="tertiary">
-  <TertiaryButton disabled={boolean("Disabled", false)}>Hello world</TertiaryButton>
+<Preview withToolbar>
+<Story name="Tertiary">
+  <TertiaryButton disabled={boolean("Disabled", false)}>Tertiary</TertiaryButton>
 </Story>
+</Preview>
 
 
+## Small Buttons
+
+Small buttons are used as
+
+<Preview withToolbar>
+  <Story name="Small">
+     <PrimaryButton modifiers={["small"]} disabled={boolean("Disabled", false)}>Small</PrimaryButton>
+  </Story>
+</Preview>
+
+
+## Large Buttons
+
+Large buttons are used as 
+
+<Preview withToolbar>
+  <Story name="Large">
+     <PrimaryButton modifiers={["large"]} disabled={boolean("Disabled", false)}>Large</PrimaryButton>
+  </Story>
+</Preview>
+
+
+
+## Warning Buttons
+
+Warning buttons are used to convey the feeling of caution. 
+
+<Preview withToolbar>
+  <Story name="Warning">
+     <PrimaryButton modifiers={["warning"]} disabled={boolean("Disabled", false)}>Warning</PrimaryButton>
+  </Story>
+</Preview>
+
+
+## Error Buttons
+
+Error buttons are used to convey an emotion of negativity.
+
+<Preview withToolbar>
+  <Story name="Error">
+     <PrimaryButton modifiers={["error"]} disabled={boolean("Disabled", false)}>Error</PrimaryButton>
+  </Story>
+</Preview>
+
+
+## Success Buttons
+
+Success buttons are used to convey an emotion of positivity.
+
+<Preview withToolbar>
+  <Story name="Success">
+     <PrimaryButton modifiers={["success"]} disabled={boolean("Disabled", false)}>Success</PrimaryButton>
+  </Story>
+</Preview>
