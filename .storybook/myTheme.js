@@ -29,8 +29,7 @@ export default create({
   inputBorder: "silver",
   inputTextColor: "black",
   inputBorderRadius: 4,
-
-  brandTitle: "AD Portfolio 👨‍🎨",
-  brandUrl: "https://alladindaher.se",
+  brandTitle: "AD Design System 👨‍🎨",
+  brandUrl: "https://ad-design-storybook.netlify.app/",
   brandImage: "https://i.imgur.com/eFfwbLb.png",
 });

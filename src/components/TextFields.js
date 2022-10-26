@@ -31,3 +31,10 @@ export const PasswordInput = ({ label, placeholder }) => (
     <Input id="password" type="password" placeholder={placeholder} />
   </div>
 );
+
+export const Inputfield = ({ label, placeholder }) => (
+  <div style={{ display: "flex", flexDirection: "column", marginTop: "16px" }}>
+    <Label htmlFor="text">{label}</Label>
+    <Input id="inputfield" type="text" placeholder={placeholder} />
+  </div>
+);

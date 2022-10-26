@@ -4,7 +4,7 @@ import { animated, useSpring } from "react-spring";
 import { typeScale, primaryFont } from "../utils";
 import { Illustrations, CloseIcon } from "../assets";
 import { PrimaryButton, SecondaryButton } from "./Buttons";
-import { EmailInput, PasswordInput } from "./TextFields";
+import { EmailInput, Inputfield, PasswordInput } from "./TextFields";
 
 const getAnimation = (showModal) => {
   return {
@@ -31,6 +31,11 @@ const ModalWrapper = styled.div`
 const ColumnModalWrapper = styled(ModalWrapper)`
   flex-direction: row;
   justify-content: space-around;
+`;
+
+const ModalWrapperMedium = styled(ModalWrapper)`
+  width: 500px;
+  height: 500px;
 `;
 
 const ModalHeader = styled.h3`
@@ -103,4 +108,28 @@ export const SignInModal = ({ showModal, setShowModal }) => (
       </CloseModalButton>
     </ColumnModalWrapper>
   </animated.div>
+);
+
+export const Modal = ({ setShowModal }) => (
+  <ModalWrapperMedium>
+    <div>
+      <ModalHeader>Create an account</ModalHeader>
+      <Inputfield label="Name" type="text" placeholder="AD Design" />
+      <EmailInput
+        label="Email"
+        type="email"
+        placeholder="ad.design@gmail.com"
+      />
+      <PasswordInput label="Password" placeholder={"Enter password"} />
+    </div>
+    <br />
+    <PrimaryButton>Sign Up</PrimaryButton>
+
+    <CloseModalButton
+      aria-label="Close modal"
+      onClick={() => setShowModal(false)}
+    >
+      <CloseIcon />
+    </CloseModalButton>
+  </ModalWrapperMedium>
 );

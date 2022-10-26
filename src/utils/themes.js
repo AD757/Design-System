@@ -29,19 +29,16 @@ export const defaultTheme = {
 };
 
 export const darkTheme = {
-  primaryColor: neutral[100],
-  primaryHoverColor: neutral[200],
+  primaryColor: neutral[200],
+  primaryHoverColor: neutral[300],
   primaryActiveColor: neutral[300],
-  formElementBackground: purple[100],
-  textOnFormElementBackground: neutral[100],
-  textColorOnPrimary: purple[300],
-  textColor: purple[300],
+  primaryDisabledColor: neutral[400],
+  textColorOnPrimary: neutral[600],
+  textColor: neutral[600],
   textColorInverted: neutral[100],
-  primaryFont: primaryFont,
-  disabled: neutral[400],
-  textOnDisabled: neutral[300],
-  textFieldBackground: neutral[200],
-  textFieldLabelColor: neutral[100],
+  primaryFont,
+  formElementBackground: neutral[500],
+  textOnFormElementBackground: neutral[100],
   status: {
     warningColor: yellow[100],
     warningColorHover: yellow[200],
